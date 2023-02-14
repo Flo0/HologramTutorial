@@ -1,0 +1,7 @@
+name: HologramTutorial
+version: '${project.version}'
+main: com.gestankbratwurst.hologramtutorial.HologramTutorial
+api-version: 1.19
+authors: [ Gestankbratwurst ]
+description: Example plugin for creating your own holograms
+depend: [ ProtocolLib ]

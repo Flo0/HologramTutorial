@@ -53,7 +53,7 @@ public class HologramCommand extends BaseCommand {
   @CommandCompletion("@Holograms @nothing")
   public void onHologramAddLine(Player player, @Values("@Holograms") String hologramName, String line) {
     hologramManager.getHologram(hologramName).addLine(line);
-    player.sendMessage("§9> §fAdded line to §9%s §f.".formatted(hologramName));
+    player.sendMessage("§9> §fAdded line to §9%s§f.".formatted(hologramName));
   }
 
   @Subcommand("setline")
@@ -65,7 +65,7 @@ public class HologramCommand extends BaseCommand {
       return;
     }
     hologramManager.getHologram(hologramName).setLine(lineIndex, line);
-    player.sendMessage("§9> §fSet line in §9%s §f.".formatted(hologramName));
+    player.sendMessage("§9> §fSet line in §9%s§f.".formatted(hologramName));
   }
 
   @Subcommand("removeLine")
